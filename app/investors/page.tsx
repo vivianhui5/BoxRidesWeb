@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Investors() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gradient-to-br from-neutral-50 to-primary-50">
       <Header />
       <div className="pt-16">
         <Contact />
