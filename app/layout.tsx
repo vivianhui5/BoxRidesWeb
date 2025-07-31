@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'BoxRides - Eco-Friendly Shipping Solutions',
-  description: 'Sustainable shipping solutions for the modern world. Join our eco-friendly delivery revolution.',
-  keywords: 'shipping, eco-friendly, sustainable, delivery, logistics',
+  title: 'BoxRides',
+  description: 'Redefining Delivery Logistics',
+  keywords: 'shipping, AI, eco-friendly, sustainable, delivery, logistics',
   authors: [{ name: 'BoxRides' }],
   openGraph: {
-    title: 'BoxRides - Eco-Friendly Shipping Solutions',
-    description: 'Sustainable shipping solutions for the modern world.',
+    title: 'BoxRides',
+    description: 'Redefining Delivery Logistics',
     type: 'website',
   },
 }
