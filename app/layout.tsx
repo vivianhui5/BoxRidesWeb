@@ -9,6 +9,18 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/apple-icon.png',
   },
+  openGraph: {
+    title: 'BoxRides - Redefining Delivery Logistics',
+    description: 'A logistics layer built to optimize the delivery process using advanced AI algorithms.',
+    images: [
+      {
+        url: '/boxrides-logo.png',
+        width: 513,
+        height: 513,
+        alt: 'BoxRides Logo',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
