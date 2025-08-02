@@ -115,9 +115,7 @@ export default function BetaSignup({ isOpen, onClose }: BetaSignupProps) {
               Get Early Access
             </h2>
             
-            <p className="text-lg text-neutral-600 mb-8">
-              Be among the first to try our logistics platform.
-            </p>
+            
             
             {isSubmitted ? (
               <div className="py-8">
