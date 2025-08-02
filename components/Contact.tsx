@@ -53,14 +53,14 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <div className="flex justify-center mb-8">
             <div className="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full">
               <MessageCircle className="w-8 h-8 text-primary-600" />
             </div>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 text-center">
             Partner with <span className="gradient-text">BoxRides</span>
           </h2>
           
@@ -93,6 +93,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className="input-field"
+                  placeholder = "Company / Investor Name"
                   required
                 />
               </div>
@@ -107,6 +108,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className="input-field"
+                  placeholder = "investor@example.com"
                   required
                 />
               </div>

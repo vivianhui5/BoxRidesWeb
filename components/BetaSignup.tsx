@@ -83,93 +83,100 @@ export default function BetaSignup({ isOpen, onClose }: BetaSignupProps) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div 
         className="fixed inset-0" 
         onClick={onClose}
         aria-label="Close modal"
       />
       
-      <div className="bg-white rounded-2xl max-w-lg w-full relative shadow-2xl">
+      <div className="bg-white rounded-xl max-w-md w-full relative shadow-xl border border-neutral-100">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-neutral-400 hover:text-neutral-600 transition-colors duration-200"
+          className="absolute top-4 right-4 p-1.5 text-neutral-400 hover:text-neutral-600 hover:bg-neutral-100 rounded-lg transition-all duration-200"
           aria-label="Close modal"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
         
         <div className="p-8">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <Image 
-                src="/boxrides-logo.png" 
-                alt="BoxRides Logo" 
-                width={48}
-                height={48}
-                className="w-12 h-12"
-              />
-            </div>
-            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
-              Get Early Access
-            </h2>
-            
-            
-            
-            {isSubmitted ? (
-              <div className="py-8">
-                <div className="flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6 mx-auto">
-                  <CheckCircle className="w-8 h-8 text-primary-600" />
-                </div>
-                <h3 className="text-2xl font-semibold text-neutral-900 mb-3">Thank you!</h3>
-                <p className="text-neutral-600">
-                  We&apos;ll notify you as soon as our beta launches.
-                </p>
+          {isSubmitted ? (
+            <div className="text-center py-4">
+              <div className="flex items-center justify-center w-14 h-14 bg-primary-100 rounded-full mb-6 mx-auto">
+                <CheckCircle className="w-7 h-7 text-primary-600" />
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First name"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    className="px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last name"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    className="px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
-                    required
-                  />
+              <h3 className="text-xl font-semibold text-neutral-900 mb-2">Thank you!</h3>
+              <p className="text-neutral-600 text-sm">
+                We&apos;ll notify you as soon as our beta launches.
+              </p>
+            </div>
+          ) : (
+            <div className="text-center">
+              <div className="mb-6">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-2">
+                  Get Early Access
+                </h2>
+              
+              </div>
+              
+              <form onSubmit={handleSubmit} className="space-y-4 text-left">
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label htmlFor="firstName" className="block text-xs font-medium text-neutral-700 mb-1.5">
+                    First ame
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2.5 bg-neutral-50 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent focus:bg-white outline-none transition-all duration-200 text-sm"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="lastName" className="block text-xs font-medium text-neutral-700 mb-1.5">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2.5 bg-neutral-50 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent focus:bg-white outline-none transition-all duration-200 text-sm"
+                      required
+                    />
+                  </div>
                 </div>
                 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none"
-                  required
-                />
+                <div>
+                  <label htmlFor="email" className="block text-xs font-medium text-neutral-700 mb-1.5">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2.5 bg-neutral-50 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent focus:bg-white outline-none transition-all duration-200 text-sm"
+                    required
+                  />
+                </div>
                 
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                  className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 mt-6 text-sm"
                 >
                   {isLoading ? 'Joining...' : 'Join Beta'}
                 </button>
               </form>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

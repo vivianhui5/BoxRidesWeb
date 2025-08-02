@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Truck, BarChart3, Zap, Shield, Clock, Globe, DollarSign, Droplets, Package, Leaf, Brain, Recycle, TrendingUp, CircleDollarSign } from 'lucide-react'
+import { Truck, BarChart3, Zap, Shield, Clock, Globe, DollarSign, Droplets, Package, Leaf, Brain, Recycle, TrendingUp, CircleDollarSign, Route } from 'lucide-react'
 import BetaSignup from './BetaSignup'
 
 export default function Hero() {
@@ -64,7 +64,7 @@ export default function Hero() {
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-lg mb-3 mx-auto">
-                  <Brain className="w-5 h-5 text-primary-600" />
+                  <Route className="w-5 h-5 text-primary-600" />
                 </div>
                 <div className="text-sm font-semibold text-neutral-900">AI Powered</div>
                 <div className="text-xs text-neutral-500">Routing</div>
