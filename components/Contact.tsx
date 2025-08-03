@@ -64,8 +64,8 @@ export default function Contact() {
             Partner with <span className="gradient-text">BoxRides</span>
           </h2>
           
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-            We&apos;re combining intelligent routing, eco-conscious design, and real-time optimization to modernize one of the world&apos;s most outdated systems: shipping. If you&apos;re an investor exploring next-generation logistics, platform economies, or sustainable transportation innovation, we&apos;d love to connect.
+          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            BoxRides is modernizing one of the world&apos;s most outdated systems: shipping. If you&apos;re an investor interested in logistics, AI, or sustainable transportation, we&apos;d love to connect.
           </p>
         </div>
 
