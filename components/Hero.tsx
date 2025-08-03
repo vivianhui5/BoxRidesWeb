@@ -125,7 +125,6 @@ export default function Hero() {
                               </div>
                               <div className="text-right">
                                 <div className="text-lg font-bold text-secondary-600">$53.82</div>
-                                <div className="text-xs text-secondary-500">+12%</div>
                               </div>
                             </div>
                           </div>
