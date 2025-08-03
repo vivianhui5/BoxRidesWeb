@@ -127,7 +127,7 @@ export default function BetaSignup({ isOpen, onClose }: BetaSignupProps) {
                   Get Early Access
                 </h2>
                 <p className="text-neutral-600 text-sm">
-                  Join our beta program for exclusive early access
+                Join our beta program and be the first to experience BoxRides.
                 </p>
               </div>
               
