@@ -152,7 +152,7 @@ export default function Contact() {
                 className="btn-primary inline-flex items-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                {isLoading ? 'Sending...' : 'Send Message'}
+                {isLoading ? 'Sending...' :"Let's Chat!"}
               </button>
             </div>
           </form>
