@@ -105,43 +105,31 @@ export default function Hero() {
                     {/* Bottom UI */}
                     <div className="absolute bottom-6 left-6 right-6 space-y-3">
                       {/* Money Saved Notification */}
-                      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-4 shadow-lg transform translate-y-0 transition-all duration-500 hover:translate-y-1 hover:shadow-xl animate-slide-in-bottom animation-delay-1200">
-                        <div className="flex items-center space-x-3">
-                          <div className="flex items-center justify-center w-10 h-10 bg-secondary-100 rounded-full animate-pulse-slow">
-                            <DollarSign className="w-5 h-5 text-secondary-600" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex items-center justify-between">
-                              <div>
-                                <div className="text-sm font-semibold text-neutral-900">Money Saved</div>
-                                <div className="text-xs text-neutral-500">on this package delivery.</div>
-                              </div>
-                              <div className="text-right">
-                                <div className="text-lg font-bold text-secondary-600 animate-number-count">$53.82</div>
-                                <div className="text-xs text-secondary-500">+12%</div>
-                              </div>
+                      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-3 shadow-lg transform translate-y-0 transition-all duration-500 hover:translate-y-1 hover:shadow-xl animate-slide-in-bottom animation-delay-1200">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-2">
+                            <div className="flex items-center justify-center w-8 h-8 bg-secondary-100 rounded-full animate-pulse-slow">
+                              <DollarSign className="w-4 h-4 text-secondary-600" />
                             </div>
+                            <span className="text-sm font-semibold text-neutral-900">Money Saved</span>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-lg font-bold text-secondary-600 animate-number-count">$53.82</div>
                           </div>
                         </div>
                       </div>
                       
                       {/* Fuel Saved Notification */}
-                      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-4 shadow-lg transform translate-y-0 transition-all duration-500 hover:translate-y-1 hover:shadow-xl animate-slide-in-bottom animation-delay-1400">
-                        <div className="flex items-center space-x-3">
-                          <div className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-full animate-pulse-slow animation-delay-600">
-                            <Droplets className="w-5 h-5 text-primary-600" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex items-center justify-between">
-                              <div>
-                                <div className="text-sm font-semibold text-neutral-900">Emissions Reduced</div>
-                                <div className="text-xs text-neutral-500">on this package delivery.</div>
-                              </div>
-                              <div className="text-right">
-                                <div className="text-lg font-bold text-primary-600 animate-number-count animation-delay-200">33 kg</div>
-                                <div className="text-xs text-primary-500"> CO2e</div>
-                              </div>
+                      <div className="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-3 shadow-lg transform translate-y-0 transition-all duration-500 hover:translate-y-1 hover:shadow-xl animate-slide-in-bottom animation-delay-1400">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-2">
+                            <div className="flex items-center justify-center w-8 h-8 bg-primary-100 rounded-full animate-pulse-slow animation-delay-600">
+                              <Droplets className="w-4 h-4 text-primary-600" />
                             </div>
+                            <span className="text-sm font-semibold text-neutral-900">Emissions Reduced</span>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-lg font-bold text-primary-600 animate-number-count animation-delay-200">71 kg CO2e</div>
                           </div>
                         </div>
                       </div>
